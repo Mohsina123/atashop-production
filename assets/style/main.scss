@@ -1,0 +1,206 @@
+@import './color.scss';
+@import './fonts.scss';
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// buttton
+html{
+  height: 100% !important;
+  width: 100% !important;
+  overflow-y: auto !important;
+  position: relative;
+}
+.mat-row{
+  vertical-align: middle !important;
+  &:hover{
+    background-color: rgb(237, 237, 255) !important;
+    transition: all 0.3s;
+  }
+}
+body{
+  font-family: 'Roboto', sans-serif !important;
+  background: $body !important;
+  color: $main !important;
+}
+.mat-sort-header-content{
+  color: $main !important;
+}
+.icon {
+  border-radius: 0.25rem;
+  text-align: center;
+  color: $light-blue;
+  padding: 15px 0;
+  padding-left: 0px !important;
+}
+
+.card-body {
+  padding: 0 20px 20px 20px;
+  padding-right: 0;
+}
+
+.card-title span {
+  color: #899bbd;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.card-title {
+  padding: 20px 0 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: $light-blue;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  line-height: 1;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 280px;
+  }
+
+}
+
+.logo img {
+  max-height: 26px;
+  margin-right: 6px;
+}
+
+.logo span {
+  font-size: 26px;
+  font-weight: 700;
+  color: $light-blue;
+  font-family: "Nunito", sans-serif;
+}
+
+.credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: $light-blue;
+}
+
+.input-group {
+  width: auto;
+}
+
+.sidebar{
+  margin-left: 300 !important
+}
+.mt-70{
+  margin-top: 70px !important;
+}
+
+.toggle{
+  .sidebar{
+    left: -300px !important;
+  }
+}
+.toggle{
+  .main{
+    margin-left: 15px !important;
+  }
+}
+.main{
+  margin-left: 315px;
+  transition: all 1s;
+  padding-top: 70px;
+  margin-right: 15px;
+
+}
+.card-header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+.card-header-title{
+  font-size: 1.1rem;
+  letter-spacing: .01rem;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 0;
+}
+.card-header-title::after{
+  position: absolute;
+  content: "";
+  left: -15px;
+  height: 20px;
+  width: 3px;
+  background-color: $nav;
+}
+.card{
+  border-color:transparent !important ;
+}
+.card-header{
+  padding: 10px 0 20px !important;
+}
+tr.mat-header-row{
+  padding: 10px 0 !important;
+  height: auto !important;
+}
+.mat-sort-header-content{
+  font-size: .875rem !important;
+}
+th.mat-header-cell:first-of-type{
+  padding-left: 0 !important;
+}
+th.mat-header-cell{
+ padding: 10px 0;
+}
+.mat-sort-header-container{
+  padding: 10px 0;
+}
+td.mat-cell:first-of-type{
+  padding-left: 0 !important;
+}
+.mat-cell{
+  font-size: 14px;
+  padding: 10px 0 !important;
+}
+.btn-main{
+  width: 100px !important; 
+}
+.form-control{
+  height: 45px;
+}
+.sidebar-nav{
+  padding-top: 5px !important;
+}
+.icon{
+  .btn{
+    margin-right: 10px;
+  }
+}
+.toggle{
+  .footer{
+    width: 100% !important;
+    margin-left: 0px !important;
+    transition: all 1s;
+  }
+}
+.form{
+  .text-area{
+    height: 115px;
+  }
+}
+
+// Form validation
+.ng-touched {
+  .invalid-feedback {
+    display: block !important;
+  }
+}
