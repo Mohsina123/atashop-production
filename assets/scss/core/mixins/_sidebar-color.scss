@@ -52,7 +52,9 @@
 @mixin set-background-color-button($color){
 
     li.active > a{
-        background-color: $color;
-        @include shadow-big-color($color);
+        background-color: #fff;
+        color: #4a7cf8;
+        font-family: 'Poppins', sans-serif !important;
+        // @include shadow-big-color($color);
     }
 }
